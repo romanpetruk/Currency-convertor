@@ -1,0 +1,42 @@
+
+@font-face {
+	font-family: "Inter";
+	src:
+	  url("/fonts/Inter-Regular.ttf") format("woff2"),
+	  url("/fonts/Inter-Regular.ttf") format("woff");
+ }
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: #1E192D;
+	color: #F5F5F5;
+	font-family: Inter, Roboto, sans-serif;
+}
+
+input, button{
+	background: none;
+	outline: none;
+	border: none;
+	font-family: Inter, Roboto, sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+ 
+h1{
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+}
+

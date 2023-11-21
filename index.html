@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Converter</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<h1>Check live foreign currency exchange rates</h1>
+			<div class="wrapper">
+				<div class="tabs">
+					<div class="tab active">
+						<div class="tab-icon">
+							<img src="images/convert.svg" alt="convert">
+						</div>
+						<div class="tab-tiatle">Convert</div>
+					</div>
+
+					<div class="tab">
+						<div class="tab-icon">
+							<img src="images/single.svg" alt="convert">
+						</div>
+						<div class="tab-tiatle">Single</div>
+					</div>
+				</div>
+
+				<div class="content">
+					<form>
+						<div class="form-inputs">
+							<div class="form-group">
+								<label for="amount">Amount</label>
+								<input 
+									type="number"
+									name="amount"
+									id="amount"
+									required
+									placeholder="1.00"/>	
+							</div>
+
+							<div class="form-selects">
+								<div class="form-select">
+									<label for="from">From</label>
+									<select class="select" name="from" id="from" required>
+										<option value="" disabled selected hidden>Choose currency</option>
+									</select>
+								</div>
+
+								<div class="form-select__icon switch-currencies">
+									<img src="images/arrows.png" alt="arrows">
+								</div>
+							
+								<div class="form-select">
+									<label for="to">To</label>
+									<select class="select" name="to" id="to" required>
+										<option value="" disabled selected hidden>Choose currency</option>
+									</select>
+								</div>				
+							</div>
+						</div>
+
+						<div class="form-info">
+							<div class="loader">
+
+							</div>
+
+							<div class="form-results">
+								<div class="form-result__item from" id="resultFrom">
+									<div class="form-result__item-icon">
+										<img src="images/arrow.svg" alt="arrow">
+									</div>
+
+									<div class="form-result__item-tiatles">
+										<div class="form-result__item-tiatle">USD</div>
+										<div class="form-result__item-full">American dollar</div>
+									</div>
+
+									<div class="form-result__item-value">1.00</div>
+								</div>
+
+								<div class="form-result__equals">
+									<img src="images/equals.svg" alt="equals">
+								</div>
+
+								<div class="form-result__item to" id="resultTo">
+									<div class="form-result__item-icon">
+										<img src="images/arrow.svg" alt="arrow">
+									</div>
+
+									<div class="form-result__item-tiatles">
+										<div class="form-result__item-tiatle">EUR</div>
+										<div class="form-result__item-full">Euro</div>
+									</div>
+
+									<div class="form-result__item-value">1.00</div>
+								</div>
+							</div>
+
+							<button class="form-submit" type="submit">Convert</button>
+						</div>
+
+						<div class="rate-informaton">
+							<div class="rate-conversion">$1 = 35</div>
+							<div class="rate last">Updated 22 March 1997</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
